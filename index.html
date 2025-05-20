@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LandingPage - CNTEMAD</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark:bg-gray-900 dark:text-white font-serif">
+  <!-- +++++++++ HEADER +++++++++ -->
+  <header class="mb-8">
+    <nav class="flex justify-between items-center">
+      <!-- +++++++++++++ LOGO + IMAGE ++++++++++++ -->
+      <a href="#" class="w-32 flex-auto flex items-center">
+        <img src="image1.jpg" alt="logo" class="max-w-15 mr-6 shadow-lg">
+        <span class="text-cntemad text-xl text-blue-400 font-bold border-b-2 pb-2">CNTEMAD</span>
+      </a>
+
+      <!-- ++++++++++++ LIST OF NAV +++++++++++++++ -->
+      <div class="w-32 flex-auto pour_le_test" id="nav_liste">
+        <!-- +++++++++++ BOXICONS ELEMENTS +++++++++++++ -->
+        <div class="nav__close fixed right-4 top-2" id="nav-close">
+          <i class='bx bx-x'></i>
+        </div> 
+
+        <!-- +++++++++++++++ LIST EXISTING ++++++++++++++++ -->
+        <ul class="toggle-nav-liste flex justify-evenly items-center font-bold max-sm:flex-col">
+          <li>
+            <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">Acceuil</a>
+          </li>
+          <li>
+            <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">À propos</a>
+          </li>
+          <li>
+            <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">Formations</a>
+          </li>
+          <li>
+            <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">Contact</a>
+          </li>
+        </ul>       
+      </div>
+
+      <!-- +++++++++++++++ BOXICONS ELEMENT +++++++++++++++ -->
+      <div class="nav_resp" id="nav_resp">
+        <i class="bx bx-home text-3xl"></i> 
+      </div>
+    </nav>
+  </header>
+
+  <!-- +++++++++++++++ MAIN +++++++++++++++ -->
+  <main class="flex justify-between items-center max-lg:flex-col">
+    <section class="home">
+      <!-- +++++++++++++++++ DESCRIPTION TEXT +++++++++++++++ -->
+      <div class="my-8">
+        <span class="text-2xl my-2">Rejoignez l'Université du</span>
+        <!-- +++++++++++ TITLE WITH TYPEWRITER +++++++++++++++++++++ -->
+        <h1 class="titre-cntemad typewriter max-w-max font-bold text-3xl my-2 text-blue-400">Centre de Télé-Enseignement de MADAGASCAR</h1>
+        <p class="text-zinc-600 my-2 max-w-5xl">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.      
+        </p>
+      </div>
+
+      <!-- +++++++++++++++ FORMULAIRE +++++++++++++++++ -->
+      <form action="#" method="post" class="mb-2">
+        <input type="text" placeholder="nom"><br>
+        <input type="email" placeholder="e-mail"><br>
+        <input type="text" placeholder="Sujet"><br>
+        <button class="bg-blue-500 ml-6 py-1 px-6 rounded-4xl mt-2">Envoyer</button>
+      </form>
+    </section>
+
+    <!-- ++++++++++++ IMAGE BONCE WITH LINK OF CNTEMAD OFFICIAL -->
+    <div class="flex-auto justify-evenly">
+      <img src="image1.jpg" class="animate-[custom-bounce_2s_infinite]" />
+      <p class="text-center">
+        <a href="www.cntemad.mg" class="text-blue-400 underline animate-pulse">www.cntemad.mg</a>
+      </p>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
