@@ -35,3 +35,9 @@ function linkActive() {
   document.querySelector("#nav_liste").classList.remove("show_menu");
 }
 linkNav.forEach(link => link.addEventListener('click', linkActive));
+
+const btn_form = document.querySelectorAll(".btn_form");
+
+btn_form.forEach(btn => btn.addEventListener('click', () => {
+  alert("Formulaire à remplir!")
+}));

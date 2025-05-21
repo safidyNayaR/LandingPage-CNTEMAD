@@ -13,7 +13,7 @@
   <header class="mb-8">
     <nav class="flex justify-between items-center">
       <!-- +++++++++++++ LOGO + IMAGE ++++++++++++ -->
-      <a href="#" class="w-32 flex-auto flex items-center">
+      <a href="#" class="w-100 flex items-center">
         <img src="image1.jpg" alt="logo" class="max-w-15 mr-6 shadow-lg">
         <span class="text-cntemad text-xl text-blue-400 font-bold border-b-2 pb-2">CNTEMAD</span>
       </a>
@@ -26,22 +26,31 @@
         </div> 
 
         <!-- +++++++++++++++ LIST EXISTING ++++++++++++++++ -->
-        <ul class="toggle-nav-liste flex justify-evenly items-center font-bold max-sm:flex-col">
+        <ul class="toggle-nav-liste flex justify-evenly items-center font-sans font-bold max-sm:flex-col">
           <li>
             <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">Acceuil</a>
           </li>
           <li>
-            <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">À propos</a>
+            <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">Programmes</a>
           </li>
           <li>
-            <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">Formations</a>
+            <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">Admissions</a>
+          </li>
+          <li>
+            <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">Campus</a>
+          </li>
+          <li>
+            <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">Témoignages</a>
           </li>
           <li>
             <a href="#" class="link-nav pb-2 hover:border-b-2 hover:text-blue-600">Contact</a>
           </li>
+          <li>
+            <button class="btn_form bg-green-500 rounded-2xl p-2 text-black" id="inscri_nav">S'inscrire maintenant</button>
+          </li>
         </ul>       
       </div>
-
+    
       <!-- +++++++++++++++ BOXICONS ELEMENT +++++++++++++++ -->
       <div class="nav_resp" id="nav_resp">
         <i class="bx bx-home text-3xl"></i> 
@@ -49,36 +58,131 @@
     </nav>
   </header>
 
-  <!-- +++++++++++++++ MAIN +++++++++++++++ -->
-  <main class="flex justify-between items-center max-lg:flex-col">
-    <section class="home">
-      <!-- +++++++++++++++++ DESCRIPTION TEXT +++++++++++++++ -->
-      <div class="my-8">
-        <span class="text-2xl my-2">Rejoignez l'Université du</span>
-        <!-- +++++++++++ TITLE WITH TYPEWRITER +++++++++++++++++++++ -->
-        <h1 class="titre-cntemad typewriter max-w-max font-bold text-3xl my-2 text-blue-400">Centre de Télé-Enseignement de MADAGASCAR</h1>
-        <p class="text-zinc-600 my-2 max-w-5xl">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.      
-        </p>
+  <main class="text-center">
+    <section>
+      <div class="relative h-96 bg-[url('etu_arriere_plan.jpg')] bg-cover bg-center rounded-4xl">
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <div class="relative z-10 flex items-center justify-center h-full text-white">
+          <div class="text-zinc-300">
+            <h1 class="text-4xl font-bold">Rejoignez l'université qui façonne votre avenir</h1>
+            <p class="mt-2 text-lg text-zinc-300"><span class="text-blue-300">CNTEMAD, </span>Une autre façon d'apprendre.</p>
+            <div class="text-black p-8 font-bold font-sans">
+              <button class="btn_form bg-green-500 rounded-2xl p-2 m-3">S'inscrire maintenant</button>
+              <button class="btn_form bg-amber-300 rounded-2xl p-2 m-3">Demandez plus d'infos</button>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- +++++++++++++++ FORMULAIRE +++++++++++++++++ -->
-      <form action="#" method="post" class="mb-2">
-        <input type="text" placeholder="nom"><br>
-        <input type="email" placeholder="e-mail"><br>
-        <input type="text" placeholder="Sujet"><br>
-        <button class="bg-blue-500 ml-6 py-1 px-6 rounded-4xl mt-2">Envoyer</button>
-      </form>
+      <div class="flex justify-between items-center font-sans">
+        <div class="w-50 flex-1 p-10">
+          <h3 class="text-2xl font-bold pb-2 text-blue-400 border-b-2">Brève description de l’université</h3>
+          <p class="text-zinc-300">CNTEMAD est une université publique spécialisée dans l’enseignement supérieur à distance.</p>
+        </div>
+        <div class="w-50 flex-1 flex flex-wrap justify-evenly p-10">
+          <div>
+            <h3 class="text-2xl font-bold pb-2">1992</h3>
+            <p class="text-zinc-300">Création</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold pb-2">+16 000</h3>
+            <p class="text-zinc-300">Etudiants</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold  pb-2">34</h3>
+            <p class="text-zinc-300">Centre Régionaux</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold pb-2 text-blue-400 border-b-2">Offre de formation</h3>
+        <div>
+          <button class="py-2 px-6 rounded-lg bg-sky-500/10 m-10">Licence</button>
+          <button class="py-2 px-6 rounded-lg bg-sky-500/10 m-10">Master</button>
+        </div>
+      </div>
+      <div class="my-6">
+        <h3 class="text-2xl font-bold pb-2 text-blue-400 border-b-2 max-w-max">Filières disponibles :</h3>
+        <div class="flex justify-evenly">
+          <div>
+            <h4 class="text-xl font-bold pb-2 text-blue-300 border-b-1">Sciences de la Société</h4>
+            <ul class="text-zinc-300 text-start list-disc">
+              <li>Droit</li>
+              <li>Économie</li>
+              <li>Gestion</li>
+              <li>Commerce</li>
+              <li>Information et Communication</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold pb-2 text-blue-300 border-b-1">Sciences et Technologies</h4>
+            <ul class="text-zinc-300 text-start list-disc">
+              <li>Informatique</li>
+              <li>Génie Industriel</li>
+              <li>Télécommunication</li>
+              <li>Techniques de l’Art Graphique</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between items-center font-sans">
+        <div class="p-10">
+          <h3 class="text-2xl font-bold pb-2 text-blue-400 border-b-2">Pourquoi choisir cette université ?</h3>
+          <p class="text-zinc-300">CNTEMAD m'a offert des opportunités excéptionnelles et ma prepare pour le succès.</p>
+        </div>
+        <div class="p-8 border rounded-2xl border-indigo-500/10">
+          <div class="flex">
+            <img src="profil.jpg" alt="un(e) étudiant(e)" class="w-12 h-12 rounded-full">
+            <div class="text-start px-10">
+              <p class="text-xl font-bold">Manda RM</p>
+              <p class="text-zinc-300">Etudiant en Informatique</p>
+            </div>
+          </div>
+          <p class="text-zinc-300 text-start">CNTEMAD m'a offert des opportunités excéptionnelles et ma prepare pour le succès.</p>
+        </div>
+      </div>
+      <div class="flex justify-between items-center font-sans py-6">
+        <div class="p-10">
+          <h3 class="text-2xl font-bold pb-2 text-blue-400 border-b-2">Présentation du Campus</h3>
+          <p class="text-zinc-300">Le siège du CNTEMAD est implanté à Ambatomitsangana, dans la capitale Malagasy.</p>
+        </div>
+        <div>
+          <img src="campus.jpg" alt="campus CNTEMAD" class="w-full h-68 opacity-75 animate-pulse rounded-2xl">
+        </div>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold p-6 pb-2 text-blue-400 border-b-2">Questions Fréquentes</h3>
+        <div class="flex flex-wrap justify-center">
+          <div class="w-30 flex-1 mx-4">
+            <h4 class="text-xl font-bold pb-2 text-blue-300 border-b-1">Quels documents sont requis ?</h4>
+            <p class="text-zinc-300 text-start"> - Formulaire d'inscription <br>
+                - Photocopie certifiée conforme du diplôme requis <br>
+                - Photocopie de la carte d'identité nationale (CIN) <br>
+                - Photos d'identité <br>
+                - Acte de naissance <br>
+                - Justificatif de paiement des frais d'inscription
+            </p>
+          </div>
+          <div class="w-30 flex-1 mx-4">
+            <h4 class="text-xl font-bold pb-2 text-blue-300 border-b-1">Y a-t-il des bourses disponibles ?</h4>
+            <p class="text-zinc-300 text-start">Des bourses d'études sont disponibles pour les étudiants malgaches, y compris ceux inscrits au CNTEMAD. Bien que le CNTEMAD ne propose pas directement de bourses internes, ses étudiants peuvent bénéficier de plusieurs programmes de bourses offerts par le gouvernement malgache et des partenaires internationaux.</p>
+          </div>
+          <div class="w-30 flex-1 mx-4">
+            <h4 class="text-xl font-bold pb-2 text-blue-300 border-b-1">Peut-on s’inscrire en ligne ?</h4>
+            <p class="text-zinc-300 text-start">Il est possible de s'inscrire en ligne au Centre National de Télé-Enseignement de Madagascar (CNTEMAD). Le processus d'inscription peut varier selon les années et les centres régionaux, mais généralement, le CNTEMAD propose des options d'inscription en ligne via son site officiel ou ses plateformes associées.</p>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <!-- ++++++++++++ IMAGE BONCE WITH LINK OF CNTEMAD OFFICIAL -->
-    <div class="flex-auto justify-evenly">
-      <img src="image1.jpg" class="animate-[custom-bounce_2s_infinite]" />
-      <p class="text-center">
-        <a href="www.cntemad.mg" class="text-blue-400 underline animate-pulse">www.cntemad.mg</a>
-      </p>
-    </div>
   </main>
+
+  <footer class="w-full h-25 bg-blue-950/20 my-20 rounded-2xl">
+    <div class="text-center text-zinc-300 p-6">
+      <p><span class="font-bold">@CNTEMAD</span>| cntemad_tana@gmail.com | Formations Diplômantes</p>
+      <p>Ambatomitsangana | 032 xx xxx 10</p>
+      <p>&copy; 2025 CNTEMAD</p>
+    </div>
+  </footer>
   <script src="app.js"></script>
 </body>
 </html>
